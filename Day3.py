@@ -14,3 +14,10 @@ for key, value in server.items():
 dict_laptop= {"Brand" :"HP", "RAM":"16GB", "Price":"$1200"}
 for key, value in dict_laptop.items():
     print(key, ":", value)
+
+count = 0
+for i in range(1, 51):
+    if i % 2 == 0:
+        count += 1
+      
+print("Total even numbers from 1 to 50:", count)
