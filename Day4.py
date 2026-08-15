@@ -20,3 +20,11 @@ for region, status in region_status.items():
         print(f"Region {region} is degraded")   
     else:
         print(f"Region {region} is healthy")
+
+
+# print "Pass" if marks >= 40, else "Fail"
+student = {"name": "Nitya", "marks": 82}
+if student["marks"] >= 40:
+    print("Pass")
+else:
+    print("Fail")
