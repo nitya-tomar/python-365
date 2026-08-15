@@ -10,3 +10,13 @@ for k , v in keys.items():
         print(f"Zombie key detected in : {k}")
     else:
         print(f"{k} is active")
+
+   
+
+region_status = {"us-east-1": "healthy", "us-west-2": "degraded", "ap-south-1": "healthy"}
+# print only regions that are "degraded"
+for region, status in region_status.items():
+    if status == "degraded":
+        print(f"Region {region} is degraded")   
+    else:
+        print(f"Region {region} is healthy")
