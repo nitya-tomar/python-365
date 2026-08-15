@@ -6,7 +6,7 @@ else:
     print(server["name"], "is healthy")    
 
 
-# 1. Create a dictionary for a laptop with keys brand, ram, price. Print each key and value using a loop.
+#  Create a dictionary for a laptop with keys brand, ram, price. Print each key and value using a loop.
 dict_laptop= {"Brand" :"HP", "RAM":"16GB", "Price":"$1200"}
 for key, value in dict_laptop.items():
     print(key, ":", value)

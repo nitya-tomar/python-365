@@ -2,7 +2,9 @@
 for i in range (1,101) :
     if i % 3 ==0 and i % 5==0 :
         print(i)
- #(zombie key check)
+
+
+#(zombie key check)
         
 keys = {"key1": 45, "key2": 120, "key3": 200}
 for k , v in keys.items():
@@ -13,8 +15,9 @@ for k , v in keys.items():
 
    
 
-region_status = {"us-east-1": "healthy", "us-west-2": "degraded", "ap-south-1": "healthy"}
+
 # print only regions that are "degraded"
+region_status = {"us-east-1": "healthy", "us-west-2": "degraded", "ap-south-1": "healthy"}
 for region, status in region_status.items():
     if status == "degraded":
         print(f"Region {region} is degraded")   
