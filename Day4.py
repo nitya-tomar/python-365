@@ -8,3 +8,5 @@ keys = {"key1": 45, "key2": 120, "key3": 200}
 for k , v in keys.items():
     if v>90:
         print(f"Zombie key detected in : {k}")
+    else:
+        print(f"{k} is active")
