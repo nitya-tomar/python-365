@@ -9,3 +9,7 @@ def zombie_report(keys_dict):
             print(key, ": ZOMBIE")
         else:
             print(key, ": active")
+
+z1 = {"key1": 45, "key2": 120, "key3": 200}
+zombie_report(z1)
+print(is_zombie(100))  # True
