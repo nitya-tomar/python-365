@@ -3,12 +3,12 @@ def is_zombie(days_unused):
 
 def zombie_report(keys_dict):
     # loop through keys_dict
-    for key, days_unused in keys_dict.items():
+    for k, days_unused in keys_dict.items():
         # use is_zombie() inside this function to check each value
         if is_zombie(days_unused):
-            print(key, ": ZOMBIE")
+            print(k, ": ZOMBIE")
         else:
-            print(key, ": active")
+            print(k, ": active")
 
 z1 = {"key1": 45, "key2": 120, "key3": 200}
 zombie_report(z1)
