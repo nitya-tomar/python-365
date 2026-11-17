@@ -1,0 +1,4 @@
+2026-10-24,web-01,INFO,Started
+2026-10-24,web-02,ERROR,Disk Full
+2026-10-24,web-03,WARN,High CPU
+2026-10-24,web-04,ERROR,Connection Timeout

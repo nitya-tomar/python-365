@@ -18,3 +18,20 @@ print(text2)
 # 4. "high" ko "critical" se replace karke print kar
 t1 = text1.replace("high","critical")
 print(t1)
+
+logs = [
+    "2026-10-24,web-01,INFO,Started",
+    "2026-10-24,web-02,ERROR,Disk Full",
+    "2026-10-24,web-03,WARN,High CPU",
+    "2026-10-24,web-04,ERROR,Connection Timeout"
+]
+
+# Har line ko split(",") kar
+for i in logs:
+    logs1=i.split(",")
+    if logs1[2] == "ERROR":
+        print(f"{logs1[1]} - {logs1[3]}")
+# Agar level (index 2) "ERROR" hai, to print kar: server name aur message
+# Expected output:
+# web-02 - Disk Full
+# web-04 - Connection Timeout
